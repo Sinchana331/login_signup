@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+h1, h2 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Styles */
+.section {
+    display: none;
+    padding: 50px;
+    height: 100vh;
+}
+
+#home {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background for Home */
+    display: block;
+    color: #fff;
+}
+
+#signup, #login {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background for Login & Sign Up */
+    color: #fff;
+}
+
+#upload {
+    background: linear-gradient(135deg, #00bcd4, #4caf50); /* Light blue to green gradient for Upload */
+}
+
+/* Button Styles */
+button {
+    padding: 14px 30px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #f50057;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #c51162;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff4081;
+    outline: none;
+}
+
+/* Text Links */
+.underscore {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #ff4081;
+    font-weight: bold;
+}
+
+.underscore:hover {
+    color: #f50057;
+}
+
+/* Center buttons vertically on the home page */
+#home .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#home button {
+    width: 80%; /* Make buttons stretch to fit the container */
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    input {
+        width: 80%;
+    }
+}
